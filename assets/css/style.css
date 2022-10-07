@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+}
+h2,span,p{
+    
+    color: #fff;
+}
+.card{
+    background-color: rgb(0 0 0 / 0.2);
+    width: 325px;
+    text-align: center;
+    margin: 2em auto;
+    border-radius: 1.3em;
+    padding: 1em;
+    box-shadow: 5px 5px 20px 5px rgb(0 0 0 / 0.7);
+}
+.img--profile{
+    width: 150px;
+    border-radius: 50%;
+    border: .4em solid #fff;
+    box-shadow: 0 0 .5em #fff;
+}
+.card__link{
+    background-color: rgb(45, 181, 226);
+    width: 250px;
+    display: flex;
+    gap: 1.5em;
+    text-align: center;
+    margin: 1em auto;
+    padding: .5em 2em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    border: .2em solid #fff;
+    color: #fff;
+    box-shadow: 3px 5px 3px rgba(47, 47, 47, 0.7);
+}
+.card__text-title{
+    font-size: 4rem;
+    font-family: 'The Nautigal', cursive;
+}
+.card__text-description{
+    font-size: .8rem;
+    margin:1em;
+}
+.card__text-link{
+    font-size: 1.2rem;
+}
+.card__text-footer{
+    font-size: .6rem;
+}
+.bx{
+    font-size: 1.5rem;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@media (hover:hover){
+    .card__link:hover{
+        background-color: lightcoral;
+        transform: scale(1.05);
+        transition: .4s;
+    }
+}
+.card__link:focus{
+    background-color:#FF5ACD;
+    
+    transform: scale(1.05);
+    box-shadow: 0 0 0 1px rgb(70, 70, 70);
+    animation: animated-link .4s forwards;
+
+}
+@keyframes animated-link{
+    100%{
+        box-shadow: 0 0 50px 20px rgb(0 0 0 / 0);
+    }
+}
+.card__link:active{
+    background-color: rgb(145, 58, 231);
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+:root{
+    /* tamaños de fuentes */
+    --font-normal:1.2rem;
+    --font-big:3rem;
+    --font-small:.6rem;
+    /* Backgroud and colors */
+    --color-text: #f3f3f3;
+}
+
+
